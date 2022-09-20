@@ -4,7 +4,7 @@ from requests.adapters import HTTPAdapter
 from requests.packages.urllib3.util.retry import Retry
 
 
-api_url = "multiversebridge.com/api/v1/cards/search?"
+api_url = "http://www.multiversebridge.com//api/v1/cards/search?"
 retry_strategy = Retry(
     total=5,
     status_forcelist=[429, 500, 502, 503, 504],
